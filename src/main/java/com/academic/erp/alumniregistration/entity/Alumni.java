@@ -26,3 +26,4 @@ public class Alumni {
     private String contactNo;
 
 }
+
