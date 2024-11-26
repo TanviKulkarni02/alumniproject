@@ -9,7 +9,7 @@ import java.util.Optional;
 
 @Repository
 public interface AlumniRepository extends JpaRepository<Alumni, Long> {
-//    Optional<Alumni> findByEmail(String email);
+    //    Optional<Alumni> findByEmail(String email);
     Optional<Alumni> findByFirstNameAndLastNameAndEmail(String firstName, String lastName, String email);
 
     Optional<Alumni> findByEmailAndPassword(String email, String encode);
