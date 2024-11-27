@@ -1,6 +1,19 @@
 import axios from "axios";
 
 
+export const loginUser = async (email, password) => {
+  try {
+    const response = await axios.post("http://localhost:8080/api/alumni/login", { email, password });
+    return response.data;
+  } catch (error) {
+    console.error("Login failed", error);
+    throw error;
+  }
+};
+
+
+
+
 export const searchAlumni = async (searchData) => {
   try {
     const response = await axios.post("http://localhost:8080/api/alumni/search", searchData);
