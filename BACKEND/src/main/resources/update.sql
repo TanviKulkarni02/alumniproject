@@ -1,3 +1,6 @@
+/* created 'update command' sql script */
+
+
 -- Insert dummy data into Alumni table
 INSERT INTO Alumni (first_name, last_name, email, password, contact_no)
 VALUES

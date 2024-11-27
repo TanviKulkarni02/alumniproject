@@ -13,7 +13,6 @@ export const loginUser = async (email, password) => {
 
 
 
-
 export const searchAlumni = async (searchData) => {
   try {
     const response = await axios.post("http://localhost:8080/api/alumni/search", searchData);

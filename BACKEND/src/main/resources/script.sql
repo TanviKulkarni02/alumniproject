@@ -1,3 +1,6 @@
+/* created 'create command' sql script */
+
+
 create database academic_erp;
 
 use academic_erp;
