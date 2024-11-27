@@ -1,6 +1,9 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Home from "./pages/Home";
 import SearchAlumni from "./components/SearchAlumni";
+import Login from "./components/Login";
+import Dashboard from "./pages/Dashboard"
+import Registration from "./components/Registration";
 
 
 function App() {

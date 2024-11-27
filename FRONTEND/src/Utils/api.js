@@ -12,3 +12,15 @@ export const searchAlumni = async (searchData) => {
   }
 };
 
+
+export const registerAlumni = async (formData) => {
+  try {
+    const response = await axios.post("http://localhost:8080/api/alumni/register", formData);
+    return response.data;
+  } catch (error) {
+    console.error("Registration failed", error);
+    throw error;
+  }
+};
+
+
