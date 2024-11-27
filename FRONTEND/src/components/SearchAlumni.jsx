@@ -4,6 +4,8 @@ import { searchAlumni } from "../Utils/api.js";
 import SearchUI from "./presentation/SearchUI.jsx";
 
 function SearchAlumni() {
+  
+  const [message, setMessage] = useState("");
   const [searchData, setSearchData] = useState({
     passingYear: "",
     firstName: "",
@@ -19,21 +21,24 @@ function SearchAlumni() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await searchAlumni(searchData);
-      if (response) {
-        navigate("/login", { state: { email: searchData.email } });
-        console.log("Enterting if")
+      await searchAlumni(searchData);
+      navigate("/login", { state: { email: searchData.email } });
+    } catch (err) {
+      if (err.response.status === 404) {
+        setMessage("Alumni does not exist.");
+        navigate('/register')
       } else {
-        navigate("/register");
+        setMessage("An unexpected error occurred. Please try again.");
       }
-    } catch (error) {
-      console.error("Search failed", error);
     }
   };
-
   return (
-    <SearchUI searchData={searchData} handleChange={handleChange} handleSubmit={handleSubmit} />
-      );
+    <SearchUI 
+    searchData={searchData} 
+    handleChange={handleChange} 
+    handleSubmit={handleSubmit}
+    message={message} />
+  );
 }
 
 export default SearchAlumni;

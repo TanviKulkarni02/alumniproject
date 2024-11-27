@@ -17,7 +17,6 @@ public record RegistrationRequest (
         String email,
 
         @NotBlank(message = "Password is mandatory")
-        @Size(min = 8, max = 20, message = "Password must be between 8 and 20 characters")
         String password,
 
         @NotBlank(message = "Contact number is mandatory")
@@ -51,10 +50,9 @@ public record RegistrationRequest (
         String address,
 
         @NotBlank(message = "Joining date is mandatory")
-        @Pattern(regexp = "\\d{2}-\\d{2}-\\d{4}", message = "Joining date must be in the format DD-MM-YYYY")
+
         String joiningDate,
 
-        @NotBlank(message = "Leaving date is mandatory")
-        @Pattern(regexp = "\\d{2}-\\d{2}-\\d{4}", message = "Leaving date must be in the format DD-MM-YYYY")
+
         String leavingDate
 ) {}

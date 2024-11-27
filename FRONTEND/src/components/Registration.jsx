@@ -41,11 +41,14 @@ function Registration() {
     }
 
     try {
+      console.log("Entered Registration")
+      console.log(formData);
       await registerAlumni(formData);
       alert("Registration successful!");
       navigate("/login"); // Redirect to login page
     } catch (error) {
       console.error("Registration failed", error);
+     
     }
   };
 
