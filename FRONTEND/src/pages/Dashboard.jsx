@@ -1,5 +1,8 @@
 import React from "react";
 
+
+///created the dashboard page after login becomes successful
+
 function Dashboard() {
   return (
     <div className="min-h-screen bg-gradient-to-br from-purple-300 to-lavender-200 flex flex-col items-center py-10">
