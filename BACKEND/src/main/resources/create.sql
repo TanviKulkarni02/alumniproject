@@ -1,6 +1,3 @@
-/* created 'create command' sql script */
-
-
 create database academic_erp;
 
 use academic_erp;
@@ -18,6 +15,7 @@ create table alumni_organization(
         id bigint PRIMARY KEY AUTO_INCREMENT,
         joining_date VARCHAR(15) NOT NULL,
         leaving_date VARCHAR(15) NOT NULL,
+        organization_name VARCHAR(30) NOT NULL,
         position VARCHAR(30) NOT NULL,
         alumni_id bigint NOT NULL
 );

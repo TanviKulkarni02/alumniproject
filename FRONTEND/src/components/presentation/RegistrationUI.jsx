@@ -2,15 +2,15 @@ import React from 'react'
 
 function RegistrationUI({ formData, handleChange, handleSubmit }) {
   return (
-    <div className="flex justify-center items-center min-h-screen bg-gradient-to-br from-purple-300 to-lavender-200 p-4">
-      <div className="bg-purple-50 p-8 rounded-lg mt-14 mb-14 shadow-md w-full max-w-3xl">
-        <h2 className="text-2xl sm:text-3xl font-semibold text-center mb-6 text-purple-700">
+    <div className="flex justify-center items-center min-h-screen bg-blue-200 p-4">
+      <div className="bg-blue-50 p-8 rounded-lg mt-14 mb-14 shadow-md w-full max-w-3xl">
+        <h2 className="text-2xl sm:text-3xl font-semibold text-center mb-6 text-gray-800">
           Alumni Registration
         </h2>
         <form onSubmit={handleSubmit} className="grid grid-cols-1 md:grid-cols-2 gap-6">
           {/* First Name */}
           <div>
-            <label htmlFor="firstName" className="block text-sm font-medium text-purple-600">
+            <label htmlFor="firstName" className="block text-sm font-medium text-gray-600">
               First Name
             </label>
             <input
@@ -20,14 +20,14 @@ function RegistrationUI({ formData, handleChange, handleSubmit }) {
               placeholder="Enter your first name"
               value={formData.firstName}
               onChange={handleChange}
-              className="mt-1 w-full px-4 py-2 border rounded-md focus:ring-purple-500 focus:border-purple-500" 
+              className="mt-1 w-full px-4 py-2 border rounded-md focus:ring-blue-500 focus:border-blue-500" 
               required
             />
           </div>
 
           {/* Last Name */}
           <div>
-            <label htmlFor="lastName" className="block text-sm font-medium text-purple-600">
+            <label htmlFor="lastName" className="block text-sm font-medium text-gray-600">
               Last Name
             </label>
             <input
@@ -37,14 +37,14 @@ function RegistrationUI({ formData, handleChange, handleSubmit }) {
               placeholder="Enter your last name"
               value={formData.lastName}
               onChange={handleChange}
-              className="mt-1 w-full px-4 py-2 border rounded-md focus:ring-purple-500 focus:border-purple-500"
+              className="mt-1 w-full px-4 py-2 border rounded-md focus:ring-blue-500 focus:border-blue-500"
               required
             />
           </div>
 
           {/* Email */}
           <div className="col-span-1 md:col-span-2">
-            <label htmlFor="email" className="block text-sm font-medium text-purple-600">
+            <label htmlFor="email" className="block text-sm font-medium text-gray-600">
               Email
             </label>
             <input
@@ -54,14 +54,14 @@ function RegistrationUI({ formData, handleChange, handleSubmit }) {
               placeholder="Enter your email"
               value={formData.email}
               onChange={handleChange}
-              className="mt-1 w-full px-4 py-2 border rounded-md focus:ring-purple-500 focus:border-purple-500"
+              className="mt-1 w-full px-4 py-2 border rounded-md focus:ring-blue-500 focus:border-blue-500"
               required
             />
           </div>
 
           {/* Password */}
           <div>
-            <label htmlFor="password" className="block text-sm font-medium text-purple-600">
+            <label htmlFor="password" className="block text-sm font-medium text-gray-600">
               Password
             </label>
             <input
@@ -71,14 +71,14 @@ function RegistrationUI({ formData, handleChange, handleSubmit }) {
               placeholder="Create a password"
               value={formData.password}
               onChange={handleChange}
-              className="mt-1 w-full px-4 py-2 border rounded-md focus:ring-purple-500 focus:border-purple-500"
+              className="mt-1 w-full px-4 py-2 border rounded-md focus:ring-blue-500 focus:border-blue-500"
               required
             />
           </div>
 
           {/* Contact Number */}
           <div>
-            <label htmlFor="contactNo" className="block text-sm font-medium text-purple-600">
+            <label htmlFor="contactNo" className="block text-sm font-medium text-gray-600">
               Contact Number
             </label>
             <input
@@ -88,7 +88,7 @@ function RegistrationUI({ formData, handleChange, handleSubmit }) {
               placeholder="Enter your contact number"
               value={formData.contactNo}
               onChange={handleChange}
-              className="mt-1 w-full px-4 py-2 border rounded-md focus:ring-purple-500 focus:border-purple-500"
+              className="mt-1 w-full px-4 py-2 border rounded-md focus:ring-blue-500 focus:border-blue-500"
               pattern="\d{1,10}"
               title="Contact No. must not exceed 10 digits"
               required
@@ -97,7 +97,7 @@ function RegistrationUI({ formData, handleChange, handleSubmit }) {
 
           {/* Degree */}
           <div>
-            <label htmlFor="degree" className="block text-sm font-medium text-purple-600">
+            <label htmlFor="degree" className="block text-sm font-medium text-gray-600">
               Degree
             </label>
             <input
@@ -107,14 +107,14 @@ function RegistrationUI({ formData, handleChange, handleSubmit }) {
               placeholder="Enter your degree"
               value={formData.degree}
               onChange={handleChange}
-              className="mt-1 w-full px-4 py-2 border rounded-md focus:ring-purple-500 focus:border-purple-500"
+              className="mt-1 w-full px-4 py-2 border rounded-md focus:ring-blue-500 focus:border-blue-500"
               required
             />
           </div>
 
           {/* Passing Year */}
           <div>
-            <label htmlFor="passingYear" className="block text-sm font-medium text-purple-600">
+            <label htmlFor="passingYear" className="block text-sm font-medium text-gray-600">
               Passing Year
             </label>
             <input
@@ -124,14 +124,14 @@ function RegistrationUI({ formData, handleChange, handleSubmit }) {
               placeholder="Enter your passing year"
               value={formData.passingYear}
               onChange={handleChange}
-              className="mt-1 w-full px-4 py-2 border rounded-md focus:ring-purple-500 focus:border-purple-500"
+              className="mt-1 w-full px-4 py-2 border rounded-md focus:ring-blue-500 focus:border-blue-500"
               required
             />
           </div>
 
           {/* Joining Year */}
           <div>
-            <label htmlFor="joiningYear" className="block text-sm font-medium text-purple-600">
+            <label htmlFor="joiningYear" className="block text-sm font-medium text-gray-600">
               Joining Year
             </label>
             <input
@@ -141,14 +141,14 @@ function RegistrationUI({ formData, handleChange, handleSubmit }) {
               placeholder="Enter your joining year"
               value={formData.joiningYear}
               onChange={handleChange}
-              className="mt-1 w-full px-4 py-2 border rounded-md focus:ring-purple-500 focus:border-purple-500"
+              className="mt-1 w-full px-4 py-2 border rounded-md focus:ring-blue-500 focus:border-blue-500"
               required
             />
           </div>
 
           {/* College Name */}
           <div>
-            <label htmlFor="collegeName" className="block text-sm font-medium text-purple-600">
+            <label htmlFor="collegeName" className="block text-sm font-medium text-gray-600">
               College Name
             </label>
             <input
@@ -158,34 +158,38 @@ function RegistrationUI({ formData, handleChange, handleSubmit }) {
               placeholder="Enter your college name"
               value={formData.collegeName}
               onChange={handleChange}
-              className="mt-1 w-full px-4 py-2 border rounded-md focus:ring-purple-500 focus:border-purple-500"
+              className="mt-1 w-full px-4 py-2 border rounded-md focus:ring-blue-500 focus:border-blue-500"
               required
             />
           </div>
 
           {/* Organization */}
           <div>
-            <label htmlFor="organization" className="block text-sm font-medium text-purple-600">
+            <label htmlFor="organizationName" className="block text-sm font-medium text-gray-600">
               Organization
             </label>
             <select
-              name="organization"
-              id="organization"
-              value={formData.organization}
+              name="organizationName"
+              id="organizationName"
+              value={formData.organizationName}
               onChange={handleChange}
-              className="mt-1 w-full px-4 py-2 border rounded-md focus:ring-purple-500 focus:border-purple-500"
+              className="mt-1 w-full px-4 py-2 border rounded-md focus:ring-blue-500 focus:border-blue-500"
             >
               <option value="">Select Organization</option>
               <option value="Google">Google</option>
               <option value="Microsoft">Microsoft</option>
               <option value="Amazon">Amazon</option>
               <option value="Apple">Apple</option>
+              <option value="Qualcomm">Qualcomm</option>
+              <option value="Morgan Stanlay">Morgan Stanlay</option>
+              <option value="Axtria">Axtria</option>
+              <option value="other">Other</option>
             </select>
           </div>
 
           {/* Work Status */}
           <div>
-            <label className="block text-sm font-medium text-purple-600">Work Status</label>
+            <label className="block text-sm font-medium text-gray-600">Work Status</label>
             <div className="mt-1 flex items-center space-x-4">
               <label className="flex items-center">
                 <input
@@ -214,7 +218,7 @@ function RegistrationUI({ formData, handleChange, handleSubmit }) {
 
           {/* Joining Date */}
           <div>
-            <label htmlFor="joiningDate" className="block text-sm font-medium text-purple-600">
+            <label htmlFor="joiningDate" className="block text-sm font-medium text-gray-600">
               Joining Date
             </label>
             <input
@@ -223,13 +227,13 @@ function RegistrationUI({ formData, handleChange, handleSubmit }) {
               id="joiningDate"
               value={formData.joiningDate}
               onChange={handleChange}
-              className="mt-1 w-full px-4 py-2 border rounded-md focus:ring-purple-500 focus:border-purple-500"
+              className="mt-1 w-full px-4 py-2 border rounded-md focus:ring-blue-500 focus:border-blue-500"
             />
           </div>
 
           {/* Leaving Date */}
           <div>
-            <label htmlFor="leavingDate" className="block text-sm font-medium text-purple-600">
+            <label htmlFor="leavingDate" className="block text-sm font-medium text-gray-600">
               Leaving Date
             </label>
             <input
@@ -238,15 +242,14 @@ function RegistrationUI({ formData, handleChange, handleSubmit }) {
               id="leavingDate"
               value={formData.leavingDate}
               onChange={handleChange}
-              className="mt-1 w-full px-4 py-2 border rounded-md focus:ring-purple-500 focus:border-purple-500"
+              className="mt-1 w-full px-4 py-2 border rounded-md focus:ring-blue-500 focus:border-blue-500"
               disabled={formData.workStatus === "working"}
               required={formData.workStatus === "worked"}
             />
           </div>
-          
           {/* Position */}
           <div>
-            <label htmlFor="position" className="block text-sm font-medium text-purple-600">
+            <label htmlFor="position" className="block text-sm font-medium text-gray-600">
               Position
             </label>
             <select
@@ -254,7 +257,7 @@ function RegistrationUI({ formData, handleChange, handleSubmit }) {
               id="position"
               value={formData.position}
               onChange={handleChange}
-              className="mt-1 w-full px-4 py-2 border rounded-md focus:ring-purple-500 focus:border-purple-500"
+              className="mt-1 w-full px-4 py-2 border rounded-md focus:ring-blue-500 focus:border-blue-500"
             >
               <option value="">Select Position</option>
               <option value="Software Engineer">Software Engineer</option>
@@ -266,7 +269,7 @@ function RegistrationUI({ formData, handleChange, handleSubmit }) {
 
           {/* Address */}
           <div>
-            <label htmlFor="address" className="block text-sm font-medium text-purple-600">
+            <label htmlFor="address" className="block text-sm font-medium text-gray-600">
               Address
             </label>
             <textarea
@@ -275,7 +278,7 @@ function RegistrationUI({ formData, handleChange, handleSubmit }) {
               placeholder="Enter your address"
               value={formData.address}
               onChange={handleChange}
-              className="mt-1 w-full px-4 py-2 border rounded-md focus:ring-purple-500 focus:border-purple-500"
+              className="mt-1 w-full px-4 py-2 border rounded-md focus:ring-blue-500 focus:border-blue-500"
               rows="3"
             />
           </div>
@@ -284,7 +287,7 @@ function RegistrationUI({ formData, handleChange, handleSubmit }) {
           <div className="col-span-1  md:col-span-2">
             <button
               type="submit"
-              className="w-full bg-purple-600 text-white px-6 py-3 rounded-lg font-medium hover:bg-purple-700 transition"
+              className="w-full bg-blue-600 text-white px-6 py-3 rounded-lg font-medium hover:bg-blue-700 transition"
             >
               Register
             </button>

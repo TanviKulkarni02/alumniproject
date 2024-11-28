@@ -13,7 +13,6 @@ export const loginUser = async (email, password) => {
 export const registerAlumni = async (formData) => {
     try {
       const response = await axios.post("http://localhost:8080/api/alumni/register", formData);
-      console.log("Response: ",response)
       return response.data;
     } catch (error) {
       console.error("Registration failed", error);
@@ -30,3 +29,4 @@ export const searchAlumni = async (searchData) => {
     throw error;
   }
 };
+

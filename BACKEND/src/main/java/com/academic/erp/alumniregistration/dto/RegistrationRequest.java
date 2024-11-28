@@ -1,6 +1,5 @@
 package com.academic.erp.alumniregistration.dto;
 
-import com.fasterxml.jackson.annotation.JsonProperty;
 import jakarta.validation.constraints.*;
 
 public record RegistrationRequest (
@@ -17,6 +16,7 @@ public record RegistrationRequest (
         String email,
 
         @NotBlank(message = "Password is mandatory")
+       
         String password,
 
         @NotBlank(message = "Contact number is mandatory")
@@ -39,7 +39,7 @@ public record RegistrationRequest (
 
         @NotBlank(message = "Organization is mandatory")
         @Size(max = 200, message = "Organization must not exceed 200 characters")
-        String organization,
+        String organizationName,
 
         @NotBlank(message = "Position is mandatory")
         @Size(max = 100, message = "Position must not exceed 100 characters")
@@ -49,10 +49,7 @@ public record RegistrationRequest (
         @Size(max = 500, message = "Address must not exceed 500 characters")
         String address,
 
-        @NotBlank(message = "Joining date is mandatory")
-
         String joiningDate,
-
 
         String leavingDate
 ) {}

@@ -26,7 +26,6 @@ function SearchAlumni() {
     } catch (err) {
       if (err.response.status === 404) {
         setMessage("Alumni does not exist.");
-        navigate('/register')
       } else {
         setMessage("An unexpected error occurred. Please try again.");
       }
