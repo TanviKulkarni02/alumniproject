@@ -16,7 +16,7 @@ public record RegistrationRequest (
         String email,
 
         @NotBlank(message = "Password is mandatory")
-       
+
         String password,
 
         @NotBlank(message = "Contact number is mandatory")
